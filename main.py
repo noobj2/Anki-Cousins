@@ -58,22 +58,28 @@ def buryCousins(self: SomeScheduler, card: "Card") -> None:
                 #to check if any item in list1 is in list2[item for item in cousinNote_tag if item in all_noteIDs]
 ################################################################################
 #############################   ADDING TAGS ####################################
-                cousinNote_addTag = True
-                for cousinNote_tag in cousin_note.tags:
-                    if len(cousinNote_tag) == 13:
-                        try:
-                            int(cousinNote_tag)
-                            cousinNote_addTag = False
-                        except ValueError:
-                            cousinNote_addTag = True
-                myNote_addTag = True
-                for myNote_tag in my_note.tags:
-                    if len(myNote_tag) == 13:
-                        try:
-                            int(myNote_tag)
-                            myNote_addTag = False
-                        except ValueError:
-                            myNote_addTag = True
+                # cousinNote_addTag = True
+                # for cousinNote_tag in cousin_note.tags:
+                #     if len(cousinNote_tag) == 13:
+                #         try:
+                #             int(cousinNote_tag)
+                #             cousinNote_addTag = False
+                #         except ValueError:
+                #             cousinNote_addTag = True
+                # myNote_addTag = True
+                # for myNote_tag in my_note.tags:
+                #     if len(myNote_tag) == 13:
+                #         try:
+                #             int(myNote_tag)
+                #             myNote_addTag = False
+                #         except ValueError:
+                #             myNote_addTag = True
+                # if cousinNote_addTag:
+                #     cousin_note.addTag("{}".format(my_note.id))
+                #     cousin_note.flush()
+                # if myNote_addTag:
+                #     my_note.addTag("{}".format(my_note.id))
+                #     my_note.flush()
 #############################   ADDING TAGS ####################################
 ################################################################################
                 toBury.add(cousin_note.id)
