@@ -99,20 +99,25 @@ class FormGrid(QGridLayout):
 class MatchRuleForm:
     def __init__(self, note_types) -> None:
         self._my_note_type = QComboBox()
+        self._my_note_type.setToolTip("Select note type.")
         for note_type, note_id in note_types.items():
             self._my_note_type.addItem(note_type, note_id)
 
         # TODO: turn LineEdits into QComboBox whose options are reset on
         # currentTextChanged.connect
         self._my_note_field = QLineEdit()
+        self._my_note_field.setToolTip("Enter the field name that you want to be compared here (CASE sensitive).")
 
         self._other_note_type = QComboBox()
+        self._other_note_type.setToolTip("Select note type.")
         for note_type, note_id in note_types.items():
             self._other_note_type.addItem(note_type, note_id)
 
         self._other_note_field = QLineEdit()
+        self._other_note_field.setToolTip("Enter the field name that you want to be compared here (CASE sensitive).")
 
         self._matcher = QComboBox()
+        self._matcher.setToolTip("Choanges the comparison test.<br> Learn more about different tests in add-on page or on github page.")
         self._matcher.addItem("By Prefix", Comparisons.prefix)
         self._matcher.addItem("By Similarity", Comparisons.similarity)
         self._matcher.addItem("Contains", Comparisons.contains)
@@ -128,6 +133,7 @@ class MatchRuleForm:
         self._threshold.setValue(0.95)
 
         self._delete = QCheckBox("Delete on Save")
+        self._delete.setToolTip("If this boc is checked, the rule will be deleted on save.")
 
     @property
     def fields(self) -> List[QWidget]:
