@@ -45,4 +45,8 @@ Bury non-sibling similar cards
 * Cards buried by this add-on are counted as automatically buried or manually buried cards?
 > as this add-on uses the same function as bury sibling function uses in anki source code, cards that this add-on buries are counted as automatically buried cards and when you want to unbury them you'll have to click "Buried siblings" when anki asks you whether you want to unbury manually buried cards or buried siblings.
 
+* I have also added an adding tag to cousin notes, however i have comented out the parts that do that. (thought you might not like that)
+if you like to enable than option, remove "#" in front of lines 61 to 82 in main.py file
+
+
 **if you have too many cards on a deck (more than 1000) using this add-on to bury cousins might make your anki laggy (just a little bit though, not a big deal)**
