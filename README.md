@@ -49,4 +49,4 @@ Bury non-sibling similar cards
 if you like to enable than option, remove "#" in front of lines 61 to 82 in main.py file
 
 
-**if you have too many cards on a deck (more than 1000) using this add-on to bury cousins might make your anki laggy (just a little bit though, not a big deal)**
+**if you have too many cards to review on a deck (more than 1000) using this add-on to bury cousins might make your anki laggy (just a little bit though, not a big deal)**
