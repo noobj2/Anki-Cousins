@@ -20,7 +20,7 @@ Bury non-sibling similar cards
 > * in original one similarity between **"this is a basic test"** and **"THIS IS A BASIC TEST"** is 20% though they're identical. but in this version the similarity is 100%
 > * in original one similarity between **"this is a cloze test"** and **"this is a {{c1::cloze}} {{c2::test}}"** is around 70% which might not be a serious problem to a lot of peple (but theire identical anyways) the problem that this might cause is in the next example. (similarity between those two is 100% in this version)
 > * in original one similarity between **"this is a cloze test"** and **"this is a {{c1::cloze::something something to decrease similarity}} {{c2::test::this is some more thing just for the same thing}}"** is around 25% but they're 100% similar in this version
-> HOWEVER, I DON'T I DON'T CLAIM CREDIT FOR ANY PART OF THIS CODE, AND IT'S ALL AlexRiina's CODE NAD ALL CREDIT GOES TO HIM
+> HOWEVER, I DON'T I DON'T CLAIM CREDIT FOR ANY PART OF THIS CODE, AND IT'S ALL AlexRiina's CODE AND ALL CREDIT GOES TO HIM
 * How to set it?
 > go to Tools -> Bury Cousin Options and click on Add Rule button.
 > in "On Note" and "To Note" options you'll have to select note types you want the add-on to compare.
